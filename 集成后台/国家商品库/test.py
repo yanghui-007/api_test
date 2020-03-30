@@ -10,7 +10,7 @@ from lib.post import post_request
 from lib.db2 import *
 
 urd='http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com/api'
-token='18ff9af1-9662-43aa-9bd4-bb49b2e87f61'
+token='766a0c04-8d3c-49ca-a5d9-45c30175cd9e'
 
 class Test_countryproductlibrary(unittest.TestCase):
 
