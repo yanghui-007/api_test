@@ -10,7 +10,7 @@ from lib.post import post_request
 from lib.db2 import *
 
 urd='http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com/api'
-token='18ff9af1-9662-43aa-9bd4-bb49b2e87f61'
+token='766a0c04-8d3c-49ca-a5d9-45c30175cd9e'
 
 class Test_countryproductlibrary(unittest.TestCase):
 
@@ -27,7 +27,6 @@ class Test_countryproductlibrary(unittest.TestCase):
     
     #     res=get_request(self,url,headers,params,)
     #     print(res.text)
-
 
     #登陆接口：
     # def test002_login(self):
@@ -82,14 +81,16 @@ class Test_countryproductlibrary(unittest.TestCase):
         print('---------------------------test003_/gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
         #print(res_json)
 
-        #self.assertIn('"code":0,"msg":"success"',res.text)
-        
         try:
             self.assertIn('"code":0,"msg":"success"',res.text)
         except Exception as err:
             # 正式运行前注释掉打印异常
             print(err)
-            #print(res)        
+            #print(res) 
+
+        self.assertIn('"code":0,"msg":"success"',res.text)
+        
+       
 
 
     #后台-商品类型-获取国家列表
@@ -145,7 +146,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         print('---------------------------test005_/gameservProduct/commonProduct/detailPage后台-商品管理-通用商品列表-关联sku列表分页---------------------------')
         #print(res_json)
 
-        #self.assertIn('"code":01,"msg":"success"',res.text)
+        self.assertIn('"code":0,"msg":"success"',res.text)
 
         # try:
         #     self.assertIn('"code":0,"msg":"success"',res.text)
@@ -276,41 +277,41 @@ class Test_countryproductlibrary(unittest.TestCase):
 
         self.assertIn('"code":0,"msg":"success"',res.text)
 
-    #获取余额代充报价
-    def test_010_getBalancePrice(self):
-        url=urd+'/gameservProduct/productSetting/getBalancePrice'
+    # #获取余额代充报价
+    # def test_010_getBalancePrice(self):
+    #     url=urd+'/gameservProduct/productSetting/getBalancePrice'
 
-        headers={
-            "Content-Type":'application/x-www-form-urlencoded',
-            "Authorization":"Bearer"+token
-        }
+    #     headers={
+    #         "Content-Type":'application/x-www-form-urlencoded',
+    #         "Authorization":"Bearer"+token
+    #     }
 
-        params={
-            "id":1
-        }
+    #     params={
+    #         "id":1
+    #     }
 
-        res=get_request(self,url,headers,params)
+    #     res=get_request(self,url,headers,params)
 
-        #print(res.text)
+    #     #print(res.text)
 
-        print(res.status_code)#相应的状态码
-        print(res.reason)#相应的状态码含义
+    #     print(res.status_code)#相应的状态码
+    #     print(res.reason)#相应的状态码含义
 
-        #相应格式为json格式
-        ress=res.text
-        res_dict=json.loads(ress)
-        res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#相应格式为json格式
-        print('---------------------------test010_/gameservProduct/productSetting/getBalancePrice获取余额代充报价---------------------------')
-        #print(res_json)
+    #     #相应格式为json格式
+    #     ress=res.text
+    #     res_dict=json.loads(ress)
+    #     res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#相应格式为json格式
+    #     print('---------------------------test010_/gameservProduct/productSetting/getBalancePrice获取余额代充报价---------------------------')
+    #     #print(res_json)
 
-        try:
-            self.assertIn('"code":0,"msg":"success"',res.text)
-        except Exception as err:
-            # 正式运行前注释掉打印异常
-            print(err)
-            print(ress) 
+    #     try:
+    #         self.assertIn('"code":0,"msg":"success"',res.text)
+    #     except Exception as err:
+    #         # 正式运行前注释掉打印异常
+    #         print(err)
+    #         print(ress) 
 
-        self.assertIn('"code":0,"msg":"success"',res.text)
+    #     #self.assertIn('"code":0,"msg":"success"',res.text)
 
 
 

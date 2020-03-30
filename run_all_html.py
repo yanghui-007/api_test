@@ -1,3 +1,4 @@
+#-*-coding:utf-8-*-
 import unittest
 from lib.HTMLTestReportCN import HTMLTestRunner
 from lib.send_email2 import send_email
