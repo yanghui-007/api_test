@@ -276,41 +276,41 @@ class Test_countryproductlibrary(unittest.TestCase):
 
         self.assertIn('"code":0,"msg":"success"',res.text)
 
-    #获取余额代充报价
-    def test_010_getBalancePrice(self):
-        url=urd+'/gameservProduct/productSetting/getBalancePrice'
+#     #获取余额代充报价
+#     def test_010_getBalancePrice(self):
+#         url=urd+'/gameservProduct/productSetting/getBalancePrice'
 
-        headers={
-            "Content-Type":'application/x-www-form-urlencoded',
-            "Authorization":"Bearer"+token
-        }
+#         headers={
+#             "Content-Type":'application/x-www-form-urlencoded',
+#             "Authorization":"Bearer"+token
+#         }
 
-        params={
-            "id":1
-        }
+#         params={
+#             "id":1
+#         }
 
-        res=get_request(self,url,headers,params)
+#         res=get_request(self,url,headers,params)
 
-        #print(res.text)
+#         #print(res.text)
 
-        print(res.status_code)#相应的状态码
-        print(res.reason)#相应的状态码含义
+#         print(res.status_code)#相应的状态码
+#         print(res.reason)#相应的状态码含义
 
-        #相应格式为json格式
-        ress=res.text
-        res_dict=json.loads(ress)
-        res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#相应格式为json格式
-        print('---------------------------test010_/gameservProduct/productSetting/getBalancePrice获取余额代充报价---------------------------')
-        #print(res_json)
+#         #相应格式为json格式
+#         ress=res.text
+#         res_dict=json.loads(ress)
+#         res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#相应格式为json格式
+#         print('---------------------------test010_/gameservProduct/productSetting/getBalancePrice获取余额代充报价---------------------------')
+#         #print(res_json)
 
-        try:
-            self.assertIn('"code":0,"msg":"success"',res.text)
-        except Exception as err:
-            # 正式运行前注释掉打印异常
-            print(err)
-            print(ress) 
+#         try:
+#             self.assertIn('"code":0,"msg":"success"',res.text)
+#         except Exception as err:
+#             # 正式运行前注释掉打印异常
+#             print(err)
+#             print(ress) 
 
-        self.assertIn('"code":0,"msg":"success"',res.text)
+#         self.assertIn('"code":0,"msg":"success"',res.text)
 
 
 
