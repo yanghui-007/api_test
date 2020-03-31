@@ -10,7 +10,7 @@ from lib.post import post_request
 from lib.db2 import *
 
 urd='http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com/api'
-token='77af8f89-837e-4f5d-a4df-637ecb61ce9e'
+token='77af8f89-837e-4f5d-a4df-637ecb61ce9e1'
 
 class Test_countryproductlibrary(unittest.TestCase):
 
@@ -104,15 +104,15 @@ class Test_countryproductlibrary(unittest.TestCase):
 
         res=get_request(self,url,headers)
 
-        print(res.status_code)#响应的HTTP状态码
-        print(res.reason)#响应的状态码含义
+        #print(res.status_code)#响应的HTTP状态码
+        #print(res.reason)#响应的状态码含义
         #print(res.text)
 
         #b7b0ab40-84cc-4dae-bb3d-f55b5e95d125
         ress=res.text
         res_dict=json.loads(ress)
         res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#响应格式改为json格式
-        print('---------------------------test004_/gameservProduct/productCountry/getUniversalTypeAllCountry后台-商品类型-获取国家列表---------------------------')
+        #print('---------------------------test004_/gameservProduct/productCountry/getUniversalTypeAllCountry后台-商品类型-获取国家列表---------------------------')
         #print(res_json)
 
         self.assertIn('"code":0,"msg":"success"',res.text)
