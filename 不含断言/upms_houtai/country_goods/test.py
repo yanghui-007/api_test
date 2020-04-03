@@ -88,7 +88,7 @@ class Test_countryproductlibrary(unittest.TestCase):
             # print(err)
             #print(res) 
 
-        #self.assertIn('"code":0,"msg":"success"',res.text)
+        self.assertIn('"code":0,"msg":"success"',res.text)
         
        
 
@@ -115,7 +115,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         #print('---------------------------test004_/gameservProduct/productCountry/getUniversalTypeAllCountry后台-商品类型-获取国家列表---------------------------')
         #print(res_json)
 
-        #self.assertIn('"code":0,"msg":"success"',res.text)
+        self.assertIn('"code":0,"msg":"success"',res.text)
         # try:
         #     self.assertIn('"code":0,"msg":"success"',res.text)
         # except Exception as err:
@@ -151,7 +151,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         #print('---------------------------test005_/gameservProduct/commonProduct/detailPage后台-商品管理-通用商品列表-关联sku列表分页---------------------------')
         #print(res_json)
 
-        #self.assertIn('"code":0,"msg":"success"',res.text)
+        self.assertIn('"code":0,"msg":"success"',res.text)
 
         # try:
         #     self.assertIn('"code":0,"msg":"success"',res.text)
@@ -187,7 +187,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         #print('---------------------------test006_/gameservProduct/countryProduct/detail后台-商品管理-国家商品库#详情---------------------------')
         #print(res_json)
 
-        #self.assertIn('"code":0,"msg":"success"',res.text)
+        self.assertIn('"code":0,"msg":"success"',res.text)
         # try:
         #     self.assertIn('"code":0,"msg":"success"',res.text)
         # except Exception as err:
@@ -222,7 +222,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         #print('---------------------------test007_/gameservSetting/gameservCoupon/page后台-优惠券管理-列表---------------------------')
         #print(res_json)
 
-        #self.assertIn('"code":0,"msg":"success"',res.text)
+        self.assertIn('"code":0,"msg":"success"',res.text)
         # try:
         #     self.assertIn('"code":0,"msg":"success"',res.text)
         # except Exception as err:
@@ -256,7 +256,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         #print('---------------------------test008_/gameservOrder/gameservCardOrderInfo/page后台-订单管理-商品订单管理-page调整版---------------------------')
         #print(res_json)
 
-        #self.assertIn('"code":0,"msg":"success"',res.text)
+        self.assertIn('"code":0,"msg":"success"',res.text)
         # try:
         #     self.assertIn('"code":0,"msg":"success"',res.text)
         # except Exception as err:
@@ -295,7 +295,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         #print('---------------------------test009_/gameservUser/rank/page后台-会员管理-会员等级管理-列表---------------------------')
         #print(res_json)
 
-        #self.assertIn('"code":0,"msg":"success"',res.text)
+        self.assertIn('"code":0,"msg":"success"',res.text)
         # try:
         #     self.assertIn('"code":0,"msg":"success"',res.text)
         # except Exception as err:
