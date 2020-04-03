@@ -81,16 +81,18 @@ class Test_countryproductlibrary(unittest.TestCase):
         #print('---------------------------test003_/gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
         #print(res_json)
 
-        # try:
-        #     self.assertIn('"code":0,"msg":"success"',res.text)
-        # except Exception as err:
-            # 正式运行前注释掉打印异常
-            # print(err)
-            #print(res) 
-
+        try:
+            self.assertIn('"code":0,"msg":"success"',res.text)
+        except Exception as err:
+            #正式运行前注释掉打印异常
+            #print(err)
+            #print(res) ~
+            print('---------------------------test003_/gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
+            self.assertIn('"code":0,"msg":"success"',res.text)
+            #print('---------------------------test003_/gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
         #self.assertIn('"code":0,"msg":"success"',res.text)
         
-        self.assertIn('"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"',res.text)
+        #self.assertIn('"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"',res.text)
 
 
     #后台-商品类型-获取国家列表
