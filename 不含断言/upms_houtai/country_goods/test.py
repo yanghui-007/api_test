@@ -85,7 +85,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         #     self.assertIn('"code":0,"msg":"success"',res.text)
         # except Exception as err:
             # 正式运行前注释掉打印异常
-            print(err)
+            # print(err)
             #print(res) 
 
         #self.assertIn('"code":0,"msg":"success"',res.text)
