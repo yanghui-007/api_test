@@ -70,8 +70,7 @@ class Test_countryproductlibrary(unittest.TestCase):
 
         res=get_request(self,url,headers,params)
 
-        print(res.status_code)#响应的HTTP状态码
-        print(res.reason)#响应的状态码含义
+
 
         #print(res.text)
         #响应格式改为json格式
@@ -87,6 +86,8 @@ class Test_countryproductlibrary(unittest.TestCase):
             self.assertIn('"code":0,"msg":"success"',res.text)
         except Exception as err:
             #正式运行前注释掉打印异常
+            print(res.status_code)#响应的HTTP状态码
+            print(res.reason)#响应的状态码含义
             print(err)
             #print(res) 
         self.assertIn('"code":0,"msg":"success"',res.text)
@@ -106,8 +107,7 @@ class Test_countryproductlibrary(unittest.TestCase):
 
         res=get_request(self,url,headers)
 
-        print(res.status_code)#响应的HTTP状态码
-        print(res.reason)#响应的状态码含义
+
         #print(res.text)
 
         #b7b0ab40-84cc-4dae-bb3d-f55b5e95d125
@@ -122,6 +122,8 @@ class Test_countryproductlibrary(unittest.TestCase):
             self.assertIn('"code":0,"msg":"success"',res.text)
         except Exception as err:
             # 正式运行前注释掉打印异常
+            print(res.status_code)#响应的HTTP状态码
+            print(res.reason)#响应的状态码含义            
             print(err)
             #print(ress)        
         self.assertIn('"code":0,"msg":"success"',res.text)
@@ -145,8 +147,7 @@ class Test_countryproductlibrary(unittest.TestCase):
 
         res=get_request(self,url,headers,params)
         #print(res.text)
-        print(res.status_code)#响应的HTTP状态码
-        print(res.reason)#响应的状态码含义
+
 
         #响应格式为json格式
         # ress=res.text
@@ -161,6 +162,8 @@ class Test_countryproductlibrary(unittest.TestCase):
             self.assertIn('"code":0,"msg":"success"',res.text)
         except Exception as err:
             # 正式运行前注释掉打印异常
+            print(res.status_code)#响应的HTTP状态码
+            print(res.reason)#响应的状态码含义            
             print(err)
             #print(ress)         
         self.assertIn('"code":0,"msg":"success"',res.text)
@@ -184,8 +187,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         res=get_request(self,url,headers,params)
         #print(res.text)
 
-        print(res.status_code)#相应的状态码
-        print(res.reason)#响应的状态码含义
+
 
         #响应格式为json格式
         # ress=res.text
@@ -199,6 +201,8 @@ class Test_countryproductlibrary(unittest.TestCase):
             self.assertIn('"code":0,"msg":"success"',res.text)
         except Exception as err:
             # 正式运行前注释掉打印异常
+            print(res.status_code)#相应的状态码
+            print(res.reason)#响应的状态码含义        
             print(err)
         # print(ress)  
         self.assertIn('"code":0,"msg":"success"',res.text)
@@ -222,8 +226,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         res=get_request(self,url,headers,params)
         #print(res.text)
 
-        print(res.status_code)#相应的状态码
-        print(res.reason)#相应的状态码含义
+
 
         #相应格式为json格式
         # ress=res.text
@@ -237,6 +240,8 @@ class Test_countryproductlibrary(unittest.TestCase):
             self.assertIn('"code":0,"msg":"success"',res.text)
         except Exception as err:
             # 正式运行前注释掉打印异常
+            print(res.status_code)#相应的状态码
+            print(res.reason)#相应的状态码含义
             print(err)
         # print(ress)   
         self.assertIn('"code":0,"msg":"success"',res.text)
@@ -260,8 +265,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         res=get_request(self,url,headers,params)
         #print(res.text)
 
-        print(res.status_code)#相应的状态码
-        print(res.reason)#相应的状态码含义
+
 
         #相应格式为json格式
         # ress=res.text
@@ -275,6 +279,8 @@ class Test_countryproductlibrary(unittest.TestCase):
             self.assertIn('"code":0,"msg":"success"',res.text)
         except Exception as err:
             # 正式运行前注释掉打印异常
+            print(res.status_code)#相应的状态码
+            print(res.reason)#相应的状态码含义            
             print(err)
             #print(ress)  
         #数据库校验
@@ -302,8 +308,7 @@ class Test_countryproductlibrary(unittest.TestCase):
 
         #print(res.text)
 
-        print(res.status_code)#相应的状态码
-        print(res.reason)#相应的状态码含义
+
 
         #相应格式为json格式
         # ress=res.text
@@ -317,6 +322,8 @@ class Test_countryproductlibrary(unittest.TestCase):
             self.assertIn('"code":0,"msg":"success"',res.text)
         except Exception as err:
             # 正式运行前注释掉打印异常
+            print(res.status_code)#相应的状态码
+            print(res.reason)#相应的状态码含义
             print(err)
             #print(ress)  
         self.assertIn('"code":0,"msg":"success"',res.text)
