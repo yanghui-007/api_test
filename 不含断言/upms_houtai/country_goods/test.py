@@ -78,7 +78,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         #res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#响应格式改为json格式
         #print(ress)
         #print(res_dict)
-        #print('---------------------------test003_/gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
+        print('---------------------------test003_/gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
         #print(res_json)
 
         try:
@@ -112,7 +112,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         # ress=res.text
         # res_dict=json.loads(ress)
         # res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#响应格式改为json格式
-        #print('---------------------------test004_/gameservProduct/productCountry/getUniversalTypeAllCountry后台-商品类型-获取国家列表---------------------------')
+        print('---------------------------test004_/gameservProduct/productCountry/getUniversalTypeAllCountry后台-商品类型-获取国家列表---------------------------')
         #print(res_json)
 
         #self.assertIn('"code":0,"msg":"success"',res.text)
@@ -148,7 +148,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         # ress=res.text
         # res_dict=json.loads(ress)
         # res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#响应格式为json格式
-        #print('---------------------------test005_/gameservProduct/commonProduct/detailPage后台-商品管理-通用商品列表-关联sku列表分页---------------------------')
+        print('---------------------------test005_/gameservProduct/commonProduct/detailPage后台-商品管理-通用商品列表-关联sku列表分页---------------------------')
         #print(res_json)
 
         #self.assertIn('"code":0,"msg":"success"',res.text)
@@ -184,7 +184,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         # ress=res.text
         # res_dict=json.loads(ress)
         # res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#响应格式为json格式
-        #print('---------------------------test006_/gameservProduct/countryProduct/detail后台-商品管理-国家商品库#详情---------------------------')
+        print('---------------------------test006_/gameservProduct/countryProduct/detail后台-商品管理-国家商品库#详情---------------------------')
         #print(res_json)
 
         #self.assertIn('"code":0,"msg":"success"',res.text)
@@ -219,7 +219,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         # ress=res.text
         # res_dict=json.loads(ress)
         # res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#相应格式为json格式
-        #print('---------------------------test007_/gameservSetting/gameservCoupon/page后台-优惠券管理-列表---------------------------')
+        print('---------------------------test007_/gameservSetting/gameservCoupon/page后台-优惠券管理-列表---------------------------')
         #print(res_json)
 
         #self.assertIn('"code":0,"msg":"success"',res.text)
@@ -253,7 +253,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         # ress=res.text
         # res_dict=json.loads(ress)
         # res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#相应格式为json格式
-        #print('---------------------------test008_/gameservOrder/gameservCardOrderInfo/page后台-订单管理-商品订单管理-page调整版---------------------------')
+        print('---------------------------test008_/gameservOrder/gameservCardOrderInfo/page后台-订单管理-商品订单管理-page调整版---------------------------')
         #print(res_json)
 
         #self.assertIn('"code":0,"msg":"success"',res.text)
@@ -292,7 +292,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         # ress=res.text
         # res_dict=json.loads(ress)
         # res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#相应格式为json格式
-        #print('---------------------------test009_/gameservUser/rank/page后台-会员管理-会员等级管理-列表---------------------------')
+        print('---------------------------test009_/gameservUser/rank/page后台-会员管理-会员等级管理-列表---------------------------')
         #print(res_json)
 
         #self.assertIn('"code":0,"msg":"success"',res.text)
