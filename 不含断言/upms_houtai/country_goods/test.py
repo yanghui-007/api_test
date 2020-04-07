@@ -89,7 +89,8 @@ class Test_countryproductlibrary(unittest.TestCase):
             self.assertIn('"code":01,"msg":"success"',res.text)
         except Exception as err:
             #正式运行前注释掉打印异常
-
+            print('*本次环境：',urd)
+            print('*本次token:',token)
             print('*入参如下：')
             print(params_json)
             print('*出参如下：')
