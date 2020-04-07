@@ -83,7 +83,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         #print(res_json)
 
         try:
-            self.assertIn('"code":0,"msg":"success"',res.text)
+            self.assertIn('"code":01,"msg":"success"',res.text)
         except Exception as err:
             #正式运行前注释掉打印异常
 
