@@ -80,7 +80,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#响应格式改为json格式
         #print(ress)
         #print(res_dict)
-        print('*接口路径：gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
+        #print('*接口路径：gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
         #print(res_json)
 
         params_json=json.dumps(params,indent=2,sort_keys=True,ensure_ascii=False)
@@ -90,6 +90,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         except Exception as err:
             #正式运行前注释掉打印异常
             print('*本次环境：',urd)
+            print('*接口路径：gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
             print('*本次token:',token)
             print('*入参如下：')
             print(params_json)
