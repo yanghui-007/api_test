@@ -87,7 +87,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         params_json=json.dumps(params,indent=2,sort_keys=True,ensure_ascii=False)
 
         try:
-            self.assertIn('"code":0,"msg":"success"',res.text)
+            self.assertIn('"code":01,"msg":"success"',res.text)
         except Exception as err:
             #正式运行前注释掉打印异常
             print('*本次环境：',urk)
@@ -103,7 +103,7 @@ class Test_countryproductlibrary(unittest.TestCase):
             #print(err)
 
             #print(res) 
-        self.assertIn('"code":0,"msg":"success"',res.text)
+        self.assertIn('"code":01,"msg":"success"',res.text)
         
         #self.assertIn('"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"',res.text)
 
