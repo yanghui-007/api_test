@@ -10,6 +10,7 @@ from lib.post import post_request
 from lib.db2 import *
 
 urd='http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com/api'
+urk='http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com'
 token='1f252df1-8eb5-4c5e-a09c-0afd784cb8af'
 
 class Test_countryproductlibrary(unittest.TestCase):
@@ -89,7 +90,7 @@ class Test_countryproductlibrary(unittest.TestCase):
             self.assertIn('"code":01,"msg":"success"',res.text)
         except Exception as err:
             #正式运行前注释掉打印异常
-            print('*本次环境：',urd)
+            print('*本次环境：',urk)
             print('*接口路径：gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
             print('*本次token:',token)
             print('*入参如下：')
