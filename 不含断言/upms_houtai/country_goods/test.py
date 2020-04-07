@@ -86,6 +86,10 @@ class Test_countryproductlibrary(unittest.TestCase):
             self.assertIn('"code":0,"msg":"success"',res.text)
         except Exception as err:
             #正式运行前注释掉打印异常
+
+            print('入参如下：')
+            print(params)
+            print('出参如下：')
             print(res.status_code)#响应的HTTP状态码
             print(res.reason)#响应的状态码含义
             #print(err)
