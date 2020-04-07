@@ -95,7 +95,7 @@ class Test_countryproductlibrary(unittest.TestCase):
             #print(err)
             print(ress)
             #print(res) 
-        self.assertIn('"code":0,"msg":"success"',res.text)
+        self.assertIn('"code":01,"msg":"success"',res.text)
         
         #self.assertIn('"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"',res.text)
 
