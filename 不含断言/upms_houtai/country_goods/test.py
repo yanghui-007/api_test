@@ -274,10 +274,10 @@ class Test_countryproductlibrary(unittest.TestCase):
             print('*接口路径：gameservSetting/gameservCoupon/page:后台-优惠券管理-列表---------------------------')
             print('*本次token:',token)
             print('*响应的HTTP状态码:',res.status_code,res.reason)#响应的HTTP状态码            
-            print('*入参如下：')
-            print(params_json)
-            print('*出参如下：')
-            print(res_json)
+            print('*入参如下：',params_json)
+            #print(params_json)
+            print('*出参如下：',res_json)
+            #print(res_json)
             #print(res.reason)#响应的状态码含义
             #print(err)
             
