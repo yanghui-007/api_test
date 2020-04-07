@@ -71,6 +71,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         res=get_request(self,url,headers,params)
 
 
+       
 
         #print(res.text)
         #响应格式改为json格式
@@ -82,18 +83,20 @@ class Test_countryproductlibrary(unittest.TestCase):
         print('---------------------------test003_/gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------')
         #print(res_json)
 
+        params_json=json.dumps(params,indent=2,sort_keys=True,ensure_ascii=False)
+
         try:
             self.assertIn('"code":01,"msg":"success"',res.text)
         except Exception as err:
             #正式运行前注释掉打印异常
 
             print('入参如下：')
-            print(params)
+            print(params_json)
             print('出参如下：')
-            print(res.status_code)#响应的HTTP状态码
-            print(res.reason)#响应的状态码含义
+            print('响应的HTTP状态码:',res.status_code,res.reason)#响应的HTTP状态码
+            #print(res.reason)#响应的状态码含义
             #print(err)
-            print(ress)
+            print(res_json)
             #print(res) 
         self.assertIn('"code":01,"msg":"success"',res.text)
         
