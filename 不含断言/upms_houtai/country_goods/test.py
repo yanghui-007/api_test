@@ -185,11 +185,11 @@ class Test_countryproductlibrary(unittest.TestCase):
             print('*本次token:',token)
             print('*响应的HTTP状态码:',res.status_code,res.reason)#响应的HTTP状态码            
             print('*入参如下：',params_json)
-            #print('*出参如下：',res_json)
+            #print(params_json)
             print('*出参如下：',res_json)
+            #print(res_json)
             #print(res.reason)#响应的状态码含义
-            #print(err)
-            #print(res)        
+            #print(err)      
         self.assertIn('"code":01,"msg":"success"',res.text)
 
 
