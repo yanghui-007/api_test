@@ -161,7 +161,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         params={
             'id':'1',
             'size':'10',
-            'current':'1'
+            'current':'2'
         }
 
         res=get_request(self,url,headers,params)
