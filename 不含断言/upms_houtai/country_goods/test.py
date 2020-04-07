@@ -172,7 +172,7 @@ class Test_countryproductlibrary(unittest.TestCase):
         ress=res.text
         res_dict=json.loads(ress)
         res_json=json.dumps(res_dict,indent=2,sort_keys=True,ensure_ascii=False)#响应格式为json格式
-        #print(res_json)
+        print(res_json)
 
         params_json=json.dumps(params,indent=2,sort_keys=True,ensure_ascii=False)
 
