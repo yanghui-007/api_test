@@ -44,5 +44,5 @@ def send_email(report_file):
 if __name__=='__main__':
     unittest.main(verbosity=2)
     #send_email(report_file)
-    send_email('report/report.html')
+    #send_email('report/report.html')
    

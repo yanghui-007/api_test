@@ -10,5 +10,6 @@ smtp_passwd = 'iJ5xJBnmpjWzzwpZ'#密码
 
 
 sender = smtp_user#发件人，即登陆邮箱的用户名
-receiver = 'yh@juwan.group'#收件人，此处与发件人相同
+#receiver = 'yh@juwan.group'#收件人，此处与发件人相同
+receiver = 'yanghui1234561@126.com'#收件人，此处与发件人相同
 subject = '接口测试报告'#中文邮件主题
