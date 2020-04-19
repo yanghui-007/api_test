@@ -123,8 +123,8 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">Api Test</h1>
 <p class='attribute'><strong>测试人员 : </strong> 杨辉</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-04-06 17:48:51</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.378014</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-04-19 15:57:33</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.324156</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 7，失败 7，通过率= 0.00%</p>
 
 <p class='description'>测试描述：本次测试内容为小军美卡系统</p>
@@ -177,14 +177,29 @@ function html_escape(s) {
     <div id='div_ft1_1' class="collapse in">
     <pre>
     
-ft1_1: ---------------------------test003_/gameservProduct/countryProduct/page后台-商品管理-国家商品库#列表---------------------------
-401
-Unauthorized
-{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}
+ft1_1: *本次环境： http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com
+*接口路径：gameservProduct/countryProduct/page:后台-商品管理-国家商品库#列表---------------------------
+*本次token: 1f252df1-8eb5-4c5e-a09c-0afd784cb8af
+*响应的HTTP状态码: 401 Unauthorized
+*入参如下：
+{
+  "countryId": "21",
+  "current": "1",
+  "productName": "",
+  "productTypeId": "1",
+  "size": "2",
+  "statue": "1"
+}
+*出参如下：
+{
+  "code": 401,
+  "data": "1f252df1-8eb5-4c5e-a09c-0afd784cb8af",
+  "msg": "error"
+}
 Traceback (most recent call last):
-  File "C:\Users\admin\Desktop\新建文件夹 (3)\api_test\不含断言\upms_houtai\country_goods\test.py", line 94, in test003_countryproductpage
-    self.assertIn('"code":0,"msg":"success"',res.text)
-AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}'
+  File "C:\Users\admin\Desktop\新建文件夹\api_test\不含断言\upms_houtai\country_goods\test.py", line 109, in test003_countryproductpage
+    self.assertIn('"code":01,"msg":"success"',res.text)
+AssertionError: '"code":01,"msg":"success"' not found in '{"code":401,"msg":"error","data":"1f252df1-8eb5-4c5e-a09c-0afd784cb8af"}'
 
 
     </pre>
@@ -204,14 +219,20 @@ AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"erro
     <div id='div_ft1_2' class="collapse in">
     <pre>
     
-ft1_2: ---------------------------test004_/gameservProduct/productCountry/getUniversalTypeAllCountry后台-商品类型-获取国家列表---------------------------
-401
-Unauthorized
-{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}
+ft1_2: *本次环境： http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com
+*接口路径：gameservProduct/productCountry/getUniversalTypeAllCountry:后台-商品类型-获取国家列表---------------------------
+*本次token: 1f252df1-8eb5-4c5e-a09c-0afd784cb8af
+*响应的HTTP状态码: 401 Unauthorized
+*入参如下： 空
+*出参如下： {
+  "code": 401,
+  "data": "1f252df1-8eb5-4c5e-a09c-0afd784cb8af",
+  "msg": "error"
+}
 Traceback (most recent call last):
-  File "C:\Users\admin\Desktop\新建文件夹 (3)\api_test\不含断言\upms_houtai\country_goods\test.py", line 131, in test004_getUniversalTypeAllCountry
+  File "C:\Users\admin\Desktop\新建文件夹\api_test\不含断言\upms_houtai\country_goods\test.py", line 151, in test004_getUniversalTypeAllCountry
     self.assertIn('"code":0,"msg":"success"',res.text)
-AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}'
+AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"1f252df1-8eb5-4c5e-a09c-0afd784cb8af"}'
 
 
     </pre>
@@ -231,14 +252,29 @@ AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"erro
     <div id='div_ft1_3' class="collapse in">
     <pre>
     
-ft1_3: ---------------------------test005_/gameservProduct/commonProduct/detailPage后台-商品管理-通用商品列表-关联sku列表分页---------------------------
-401
-Unauthorized
-{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}
+ft1_3: {
+  "code": 401,
+  "data": "1f252df1-8eb5-4c5e-a09c-0afd784cb8af",
+  "msg": "error"
+}
+*本次环境： http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com
+*接口路径：gameservProduct/commonProduct/detailPage:后台-商品管理-通用商品列表-关联sku列表分页---------------------------
+*本次token: 1f252df1-8eb5-4c5e-a09c-0afd784cb8af
+*响应的HTTP状态码: 401 Unauthorized
+*入参如下： {
+  "current": "1",
+  "id": "2",
+  "size": "10"
+}
+*出参如下： {
+  "code": 401,
+  "data": "1f252df1-8eb5-4c5e-a09c-0afd784cb8af",
+  "msg": "error"
+}
 Traceback (most recent call last):
-  File "C:\Users\admin\Desktop\新建文件夹 (3)\api_test\不含断言\upms_houtai\country_goods\test.py", line 172, in test005_detailPage
-    self.assertIn('"code":0,"msg":"success"',res.text)
-AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}'
+  File "C:\Users\admin\Desktop\新建文件夹\api_test\不含断言\upms_houtai\country_goods\test.py", line 196, in test005_detailPage
+    self.assertIn('"code":01,"msg":"success"',res.text)
+AssertionError: '"code":01,"msg":"success"' not found in '{"code":401,"msg":"error","data":"1f252df1-8eb5-4c5e-a09c-0afd784cb8af"}'
 
 
     </pre>
@@ -258,14 +294,25 @@ AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"erro
     <div id='div_ft1_4' class="collapse in">
     <pre>
     
-ft1_4: ---------------------------test006_/gameservProduct/countryProduct/detail后台-商品管理-国家商品库#详情---------------------------
-401
-Unauthorized
-{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}
+ft1_4: *本次环境： http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com
+*接口路径：gameservProduct/countryProduct/detail:后台-商品管理-国家商品库#详情---------------------------
+*本次token: 1f252df1-8eb5-4c5e-a09c-0afd784cb8af
+*响应的HTTP状态码: 401 Unauthorized
+*入参如下：
+{
+  "countryId": 1,
+  "productId": 1
+}
+*出参如下：
+{
+  "code": 401,
+  "data": "1f252df1-8eb5-4c5e-a09c-0afd784cb8af",
+  "msg": "error"
+}
 Traceback (most recent call last):
-  File "C:\Users\admin\Desktop\新建文件夹 (3)\api_test\不含断言\upms_houtai\country_goods\test.py", line 212, in test006_countryProductdetail
+  File "C:\Users\admin\Desktop\新建文件夹\api_test\不含断言\upms_houtai\country_goods\test.py", line 242, in test006_countryProductdetail
     self.assertIn('"code":0,"msg":"success"',res.text)
-AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}'
+AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"1f252df1-8eb5-4c5e-a09c-0afd784cb8af"}'
 
 
     </pre>
@@ -285,14 +332,23 @@ AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"erro
     <div id='div_ft1_5' class="collapse in">
     <pre>
     
-ft1_5: ---------------------------test007_/gameservSetting/gameservCoupon/page后台-优惠券管理-列表---------------------------
-401
-Unauthorized
-{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}
+ft1_5: *本次环境： http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com
+*接口路径：gameservSetting/gameservCoupon/page:后台-优惠券管理-列表---------------------------
+*本次token: 1f252df1-8eb5-4c5e-a09c-0afd784cb8af
+*响应的HTTP状态码: 401 Unauthorized
+*入参如下： {
+  "current": "1",
+  "size": "1"
+}
+*出参如下： {
+  "code": 401,
+  "data": "1f252df1-8eb5-4c5e-a09c-0afd784cb8af",
+  "msg": "error"
+}
 Traceback (most recent call last):
-  File "C:\Users\admin\Desktop\新建文件夹 (3)\api_test\不含断言\upms_houtai\country_goods\test.py", line 252, in test007_gameservCouponpage
-    self.assertIn('"code":0,"msg":"success"',res.text)
-AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}'
+  File "C:\Users\admin\Desktop\新建文件夹\api_test\不含断言\upms_houtai\country_goods\test.py", line 288, in test007_gameservCouponpage
+    self.assertIn('"code":01,"msg":"success"',res.text)
+AssertionError: '"code":01,"msg":"success"' not found in '{"code":401,"msg":"error","data":"1f252df1-8eb5-4c5e-a09c-0afd784cb8af"}'
 
 
     </pre>
@@ -312,14 +368,25 @@ AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"erro
     <div id='div_ft1_6' class="collapse in">
     <pre>
     
-ft1_6: ---------------------------test008_/gameservOrder/gameservCardOrderInfo/page后台-订单管理-商品订单管理-page调整版---------------------------
-401
-Unauthorized
-{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}
+ft1_6: *本次环境： http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com
+*接口路径：gameservOrder/gameservCardOrderInfo/page:后台-订单管理-商品订单管理-page调整版---------------------------
+*本次token: 1f252df1-8eb5-4c5e-a09c-0afd784cb8af
+*响应的HTTP状态码: 401 Unauthorized
+*入参如下：
+{
+  "current": "1",
+  "size": "1"
+}
+*出参如下：
+{
+  "code": 401,
+  "data": "1f252df1-8eb5-4c5e-a09c-0afd784cb8af",
+  "msg": "error"
+}
 Traceback (most recent call last):
-  File "C:\Users\admin\Desktop\新建文件夹 (3)\api_test\不含断言\upms_houtai\country_goods\test.py", line 295, in test008_OrderInfopage
+  File "C:\Users\admin\Desktop\新建文件夹\api_test\不含断言\upms_houtai\country_goods\test.py", line 337, in test008_OrderInfopage
     self.assertIn('"code":0,"msg":"success"',res.text)
-AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}'
+AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"1f252df1-8eb5-4c5e-a09c-0afd784cb8af"}'
 
 
     </pre>
@@ -339,14 +406,25 @@ AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"erro
     <div id='div_ft1_7' class="collapse in">
     <pre>
     
-ft1_7: ---------------------------test009_/gameservUser/rank/page后台-会员管理-会员等级管理-列表---------------------------
-401
-Unauthorized
-{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}
+ft1_7: *本次环境： http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com
+*接口路径：gameservUser/rank/page:后台-会员管理-会员等级管理-列表---------------------------
+*本次token: 1f252df1-8eb5-4c5e-a09c-0afd784cb8af
+*响应的HTTP状态码: 401 Unauthorized
+*入参如下：
+{
+  "current": 1,
+  "size": 1
+}
+*出参如下：
+{
+  "code": 401,
+  "data": "1f252df1-8eb5-4c5e-a09c-0afd784cb8af",
+  "msg": "error"
+}
 Traceback (most recent call last):
-  File "C:\Users\admin\Desktop\新建文件夹 (3)\api_test\不含断言\upms_houtai\country_goods\test.py", line 336, in test009_rankpage
+  File "C:\Users\admin\Desktop\新建文件夹\api_test\不含断言\upms_houtai\country_goods\test.py", line 385, in test009_rankpage
     self.assertIn('"code":0,"msg":"success"',res.text)
-AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"77af8f89-837e-4f5d-a4df-637ecb61ce9e1"}'
+AssertionError: '"code":0,"msg":"success"' not found in '{"code":401,"msg":"error","data":"1f252df1-8eb5-4c5e-a09c-0afd784cb8af"}'
 
 
     </pre>
