@@ -5,6 +5,6 @@ logging.basicConfig(level=logging.DEBUG,  # log level
                     datefmt='%Y-%m-%d %H:%M:%S',  # 日期格式
                     filename='log/log.txt',  # 日志输出文件
                     filemode='a')  # 追加模式
-
+print(1)
 if __name__ == '__main__':
     logging.info("hello")
