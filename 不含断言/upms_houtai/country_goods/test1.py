@@ -8,8 +8,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 from lib.get import get_request
 from lib.post import post_request
 from lib.db2 import *
-from lib.HTMLTestReportCN import HTMLTestRunner
-from lib.send_email2 import send_email
+#from lib.HTMLTestReportCN import HTMLTestRunner
+#from lib.send_email2 import send_email
 
 
 urd='http://upms.c792da175267647238186842c09054706.cn-shanghai.alicontainer.com/api'
@@ -424,11 +424,11 @@ class Test_countryproductlibrary(unittest.TestCase):
 
 #suite=unittest.defaultTestLoader.discover('upms_houtai/country_goods',pattern='test*.py')
 #suite=unittest.defaultTestLoader.discover("./")
-suite = unittest.TestLoader().loadTestsFromTestCase(Test_countryproductlibrary)
-with open("report/report.html","wb") as f:#二进制打开要生成的报告文件
-    HTMLTestRunner(stream=f,title="Api Test",description="测试描述：本次测试内容为小军美卡系统").run(suite)
+# suite = unittest.TestLoader().loadTestsFromTestCase(Test_countryproductlibrary)
+# with open("report/report.html","wb") as f:#二进制打开要生成的报告文件
+#     HTMLTestRunner(stream=f,title="Api Test",description="测试描述：本次测试内容为小军美卡系统").run(suite)
     
-send_email('report/report.html')#发送邮件
+# send_email('report/report.html')#发送邮件
 
 if __name__=='__main__':
     unittest.main(verbosity=2)

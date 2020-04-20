@@ -16,8 +16,8 @@ def send_email(report_file):
 
 
     #msg['From']='yanghui1234561@163.com'#发件人
-    msg['From']='yh@juwan.group'#发件人，展示在邮件头
-    msg['To']='yanghui1234561@163.com'#收件人，展示在邮件头
+    msg['From']='yanghui1234561@163.com'#发件人，展示在邮件头
+    msg['To']='yanghui1234561@126.com'#收件人，展示在邮件头
     msg['Subject']=Header(subject,'utf-8')#中文邮件主题，指定utf-8编码
     #msg['Subject']=Header('接口测试报告','utf-8')#中文邮件主题，指定utf-8编码
 
