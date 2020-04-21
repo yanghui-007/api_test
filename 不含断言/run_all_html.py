@@ -7,7 +7,7 @@ from lib.send_email2 import send_email
 #suite=unittest.defaultTestLoader.discover('testcase_umps/productmanagement',pattern='test*.py')
 #suite=unittest.defaultTestLoader.discover('testcase_umps/productmanagement',pattern='test*.py')
 #suite=unittest.defaultTestLoader.discover('testcase_umps/countryproductlibrary',pattern='test*.py')
-suite=unittest.defaultTestLoader.discover('upms_houtai/country_goods',pattern='test*.py')
+suite=unittest.defaultTestLoader.discover('upms_houtai/country_goods',pattern='test1.py')
 
 
 #1.生成html报告，方法1：
