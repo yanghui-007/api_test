@@ -367,6 +367,8 @@ class Test_countryproductlibrary(unittest.TestCase):
 
         try:
             self.assertIn('"code":0,"msg":"success"',res.text)
+            #self.assertIn('"code":401',res.text)            
+           
         except Exception as err:
             #正式运行前注释掉打印异常
             print('*本次环境：',urk)
@@ -382,7 +384,9 @@ class Test_countryproductlibrary(unittest.TestCase):
 
             #print(res)  
             #print(ress)  
-        self.assertIn('"code":0,"msg":"success"',res.text)
+        finally:
+            self.assertIn('"code":0,"msg":"success"',res.text)
+            #self.assertIn('"code":401',res.text) 
 
 
 
